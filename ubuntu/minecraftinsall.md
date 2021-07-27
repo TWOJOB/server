@@ -18,13 +18,31 @@
 ----
 
 
-## 부팅 USB 만들기
+## 서버에 자바 설치
 
 ### Step 1: [우분투](https://ubuntu.com/download/server) 설치
 
-`[우분투](https://ubuntu.com/download/server)`사이트에 접속후
+``` Linux
+java -version
+```
+입력해 자바가 설치되어 있는지 확인
 
-`Option 2` 클릭
+> **NOTE** - 자바가 설치되어있으면 오류가 날수있으니까 삭제후 설치
+
+``` Linux
+sudo add-apt-repository ppa:linuxuprising/java
+```
+
+``` Linux
+sudo apt install oracle-java16-installer
+```
+
+> **NOTE** - 최신버전 또는 자신이 원하는 버전 설치
+
+`확인` 클릭
+
+`yes` 입력
+
 
 `Download Ubuntu Server (최신버전) LTS` 클릭
 
