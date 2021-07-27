@@ -3,15 +3,7 @@
 
 **튜토리얼**
 
-- 🌏 서버 컴퓨터에 소프트웨어 설치
-- 🎮 마크 페널[[aaPanel](https://www.aapanel.com/index.html)] 설치 및 설정
-- 🌐 웹 페널[[ISPConfig](https://www.ispconfig.org/)] 설치 및 설정
-- ☁ 클라우드[[nextcloud](https://nextcloud.com/)] 설치 및 설정
-- 🚀 [마크](https://www.minecraft.net/ko-kr)서버 시작 하기
-- 🚀 커뮤니티 설치
-- 🚀 [워드프레스](https://ko.wordpress.org/download/) 다운로드 및 설치
-- 🚀 [그누보드](https://sir.kr/g5_pds) 다운로드 및 설치
-- 🚀 [Vditor](https://b3log.org/vditor/)
+- 🌏 서버 컴퓨터에 소프트웨어 선택하기
 
 > **NOTE 1** - 👋 이 튜토리얼은 잘 모르는 사람이 기억하기 쉽게 하려고 만든 것입니다. 정확하지 않을 수도 있습니다.
 >
@@ -24,7 +16,7 @@
 
 [윈도우](https://www.microsoft.com/ko-kr/software-download)
 리눅스
-- 🚀 [ubuntu](https://ubuntu.com/download/server) 다운로드 및 설치
+- 🚀 [ubuntu](https://ubuntu.com/download/server) 다운로드 및 설치하기
 - 🚀 [CentOS](https://www.centos.org/) 다운로드 및 설치
 
 
