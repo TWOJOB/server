@@ -57,18 +57,42 @@ Connenction type
 
 ### Step 1: [ISPConfig](https://www.ispconfig.org/) 설치
 
-복사 후 PuTTY(SSH)에 입력
+apt-get업대이트
+``` Linux
+sudo apt-get update
+```
+
+apt-get업그레이드
+``` Linux
+sudo apt-get upgrade
+```
+
+서버 다시시작
+``` Linux
+sudo reboot
+```
+
+``` Linux
+hostnamectl set-hostname server.example.com
+```
+`server.example.com`위치에 자신의 서버주소(server.도메인) 입력
+
+``` Linux
+sudo -s
+```
+
+``` Linux
+cd /tmp
+git clone https://git.ispconfig.org/ispconfig/ispconfig-autoinstaller.git
+cd ispconfig-autoinstaller
+./ispc3-ai.sh
+```
 
 
 ``` Linux
-wget -O install.sh http://www.aapanel.com/script/install-ubuntu_6.0_en.sh && sudo bash install.sh aapanel
+yes
 ```
-복사 후 PuTTY(SSH)에 입력
-
-``` Linux
-Y
-```
-복사 후 PuTTY(SSH)에 입력
+입력
 
 
 ### Step 2: [ISPConfig](https://www.ispconfig.org/) 설정
