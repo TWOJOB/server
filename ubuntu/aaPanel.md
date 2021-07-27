@@ -50,6 +50,7 @@ Connenction type
 서버에 설치할때입력한 `비밀번호` 입력
 
 
+----
 
 
 ## [aaPanel](https://www.aapanel.com/index.html) 설치 및 설정하기
