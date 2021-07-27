@@ -4,8 +4,8 @@
 **튜토리얼**
 
 - [🌏](https://github.com/TWOJOB/server/blob/main/ubuntu/ubuntu.md) 서버 컴퓨터에 [우분투](https://ubuntu.com/download/server) 설치
-- [🎮]() 마크 페널[[aaPanel](https://www.aapanel.com/index.html)] 설치 및 설정
-- [🌐]() 웹 페널[[ISPConfig](https://www.ispconfig.org/)] 설치 및 설정
+- [🎮](https://github.com/TWOJOB/server/blob/main/ubuntu/aaPanel.md) 마크 페널[[aaPanel](https://www.aapanel.com/index.html)] 설치 및 설정
+- [🌐](https://github.com/TWOJOB/server/blob/main/ubuntu/ISPConfig.md) 웹 페널[[ISPConfig](https://www.ispconfig.org/)] 설치 및 설정
 - [☁]() 클라우드[[nextcloud](https://nextcloud.com/)] 설치 및 설정
 - [🚀]() [마크](https://www.minecraft.net/ko-kr)서버 시작 하기
 - [🚀]() 커뮤니티 설치
