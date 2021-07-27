@@ -50,6 +50,7 @@ Connenction type
 서버에 설치할때입력한 `비밀번호` 입력
 
 
+----
 
 
 ## [ISPConfig](https://www.ispconfig.org/) 설치 및 설정하기
