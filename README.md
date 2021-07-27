@@ -1,7 +1,7 @@
 # [우분투](https://ubuntu.com/download/server)로 서버만들기!
 
 
-👋 이 튜토리얼은 코딩을 모르는 사람이 기억할려고 만든것입니다 정확하지 않을수도 있습니다.
+👋 이 튜토리얼은 잘 모르는 사람이 기억하기 쉽게 하려고 만든 것입니다. 정확하지 않을 수도 있습니다.
 
 **튜토리얼**
 
@@ -13,8 +13,6 @@
 - 📦 Use [workbox](https://developers.google.com/web/tools/workbox/) and [workbox-window](https://developers.google.com/web/tools/workbox/modules/workbox-window) v6
 - 🍪 Work with cookies out of the box
 - ☕ No custom server needed for Next.js 9+ [example](https://github.com/shadowwalker/next-pwa/tree/master/examples/next-9)
-- 🔧 Handle PWA lifecycle events opt-in [example](https://github.com/shadowwalker/next-pwa/tree/master/examples/lifecycle)
-- 📐 Custom worker to run extra code with code splitting and **typescript** support [example]
 
 > **NOTE 1** - `next-pwa` version 2.0.0+ should only work with `next.js` 9.1+, and static files should only be served through `public` directory. This will make things simpler.
 >
