@@ -24,15 +24,42 @@
 
 ### Step 1: [우분투](https://ubuntu.com/download/server) 설치
 
+`[우분투](https://ubuntu.com/download/server)`사이트에 접속후
+
 `Option 2` 클릭
 
 `Download Ubuntu Server (최신버전) LTS` 클릭
 
 > **NOTE** - 최신버전 도는 자신이 원하는 버전 설치
 
+### Step 2: 부팅 가능한 USB 드라이브
+
+[rufus](https://rufus.ie/ko/) 최신버전 설치
+
+rufus실행후 USB선택
+
+부트 선택옆 `선택` 버튼 클릭후 다운받은 .iso 파일 선택
+
+`시작` 클릭
+
+다운로드가 필요합니다.
+`예` 클릭
+
+ISO 이미지 모드로 쓰기
+`OK` 클릭
+
+USB 모든 데이터 삭제
+`확인` 클릭
+
 ## Install
 
-### Step 1: withPWA
+### Step 1: 서버 컴퓨터 시작
+
+서버 컴퓨터에 USB연결후 전원키키
+
+부팅화면이 나오면 `F11(또는 F12)`을 눌러 바이오스 화면으로 이동후 USB(부팅USB)로 부팅
+
+### Step 2: [우분투](https://ubuntu.com/download/server) 설치하기
 
 Update or create `next.config.js` with
 
