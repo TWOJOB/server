@@ -20,15 +20,13 @@
 ----
 
 
-## 서버 컴퓨터에 [우분투](https://ubuntu.com/download/server) 설치
+## 부팅 USB 만들기
 
-> If you are new to `next.js` or `react.js` at all, you may want to first checkout [learn next.js](https://nextjs.org/learn/basics/create-nextjs-app) or [next.js document](https://nextjs.org/docs/getting-started). Then start from [a simple example](https://github.com/shadowwalker/next-pwa/tree/master/examples/next-9) or [progressive-web-app example in next.js repository](https://github.com/vercel/next.js/tree/canary/examples/progressive-web-app).
+### Step 1: [우분투](https://ubuntu.com/download/server) 설치
 
-``` bash
-yarn add next-pwa
-```
+> **NOTE** - 취신버전 도는 자신이 원하는 버전 설치
 
-## Basic Usage
+## Install
 
 ### Step 1: withPWA
 
