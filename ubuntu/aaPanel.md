@@ -30,7 +30,7 @@ putty.exe (the SSH and Telnet client itself) 버전(64-bit x86) `putty.exe`
 
 ### Step 2: SSH연결하기
 
-PuTTY를 킨후
+`PuTTY(putty.exe)`를 킨후
 
 Host Name
 - `서버IP` 입력
@@ -44,7 +44,17 @@ Connenction type
 `Open` 클릭
 
 
-## [aaPanel](https://www.aapanel.com/index.html) 설치 하기
+## [aaPanel](https://www.aapanel.com/index.html) 설치 및 설정하기
+
+### Step 1: [aaPanel](https://www.aapanel.com/index.html) 설치
+
+[aaPanel](https://www.aapanel.com/index.html)사이트 접속후
+
+Installation:
+- Ubuntu/Deepin: 
+`
+wget -O install.sh http://www.aapanel.com/script/install-ubuntu_6.0_en.sh && sudo bash install.sh aapanel
+`
 
 
 
@@ -64,9 +74,5 @@ Connenction type
 
 
 
-
-
-
-
-
+### Step 2: [aaPanel](https://www.aapanel.com/index.html) 설정
 
