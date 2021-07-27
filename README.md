@@ -10,7 +10,7 @@ This plugin is powered by [workbox](https://developers.google.com/web/tools/work
 
 - 0️⃣ 서버 컴퓨터에 [우분투](https://ubuntu.com/download/server) 설치
 - ✨ [aaPanel](https://www.aapanel.com/index.html)페널 설치 및 설정
-- 💯 [ISPConfig](https://www.ispconfig.org/)페널 설치 및 설정
+- 💯 [ISPConfig](https://www.ispconfig.org/)페널[[ISPConfig](https://www.ispconfig.org/)] 설치 및 설정
 - 🎈 [nextcloud](https://nextcloud.com/)페널 설치
 - 📴 Completely offline support with fallbacks [example](https://github.com/shadowwalker/next-pwa/tree/master/examples/offline-fallback-v2) 🆕
 - 📦 Use [workbox](https://developers.google.com/web/tools/workbox/) and [workbox-window](https://developers.google.com/web/tools/workbox/modules/workbox-window) v6
