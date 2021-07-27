@@ -8,7 +8,7 @@ This plugin is powered by [workbox](https://developers.google.com/web/tools/work
 
 **Features**
 
-- 0️⃣ Zero config for registering and generating service worker
+- 0️⃣ 서버 컴퓨터에 [우분투](https://ubuntu.com/download/server) 설치
 - ✨ Optimized precache and runtime cache
 - 💯 Maximize lighthouse score
 - 🎈 Easy to understand examples
