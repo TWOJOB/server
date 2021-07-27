@@ -72,8 +72,6 @@ sudo apt-get upgrade
 sudo reboot
 ```
 
-암호입력
-
 ``` Linux
 hostnamectl set-hostname server.example.com
 ```
@@ -82,6 +80,8 @@ hostnamectl set-hostname server.example.com
 ``` Linux
 sudo -s
 ```
+
+암호입력
 
 ``` Linux
 cd /tmp
