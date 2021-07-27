@@ -1,9 +1,9 @@
-# [우분투](https://ubuntu.com/download/server)로 서버만들기!
+# 서버 컴퓨터 만들기!
 
 
 **튜토리얼**
 
-- 🌏 서버 컴퓨터에 [우분투](https://ubuntu.com/download/server) 설치
+- 🌏 서버 컴퓨터에 소프트웨어 설치
 - 🎮 마크 페널[[aaPanel](https://www.aapanel.com/index.html)] 설치 및 설정
 - 🌐 웹 페널[[ISPConfig](https://www.ispconfig.org/)] 설치 및 설정
 - ☁ 클라우드[[nextcloud](https://nextcloud.com/)] 설치 및 설정
@@ -20,7 +20,7 @@
 ----
 
 
-## 서버 컴퓨터에 [우분투](https://ubuntu.com/download/server) 설치
+## 서버 컴퓨터에 소프트웨어 설치
 
 > If you are new to `next.js` or `react.js` at all, you may want to first checkout [learn next.js](https://nextjs.org/learn/basics/create-nextjs-app) or [next.js document](https://nextjs.org/docs/getting-started). Then start from [a simple example](https://github.com/shadowwalker/next-pwa/tree/master/examples/next-9) or [progressive-web-app example in next.js repository](https://github.com/vercel/next.js/tree/canary/examples/progressive-web-app).
 
