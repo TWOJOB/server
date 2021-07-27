@@ -1,8 +1,6 @@
 # [우분투](https://ubuntu.com/download/server)로 서버만들기!
 
 
-👋 이 튜토리얼은 잘 모르는 사람이 기억하기 쉽게 하려고 만든 것입니다. 정확하지 않을 수도 있습니다.
-
 **튜토리얼**
 
 - 🌏 서버 컴퓨터에 [우분투](https://ubuntu.com/download/server) 설치
@@ -15,9 +13,9 @@
 - 🚀 [그누보드](https://sir.kr/g5_pds) 다운로드 및 설치
 - 🚀 [Vditor](https://b3log.org/vditor/)
 
-> **NOTE 1** - `next-pwa` version 2.0.0+ should only work with `next.js` 9.1+, and static files should only be served through `public` directory. This will make things simpler.
+> **NOTE 1** - 👋 이 튜토리얼은 잘 모르는 사람이 기억하기 쉽게 하려고 만든 것입니다. 정확하지 않을 수도 있습니다.
 >
-> **NOTE 2** - If you encounter error `TypeError: Cannot read property **'javascript' of undefined**` during build, [please consider upgrade to webpack5 in `next.config.js`](https://github.com/shadowwalker/next-pwa/issues/198#issuecomment-817205700).
+> **NOTE 2** - 안되거나 오류가 나면 처음부터 다시 설치를 하다 보면 고쳐지기도 한다`그래서 50번 정도 다시 설치하면 서 알게 된 거...`
 
 ----
 
