@@ -96,8 +96,18 @@ yes
 ```
 입력
 
+### Step 2: [ISPConfig](https://www.ispconfig.org/) 접속
 
-### Step 2: [ISPConfig](https://www.ispconfig.org/) 설정
+https://server.example.com:8080
+주소에 `:8080`를 붙여서 접속
+
+
+
+
+
+
+
+### Step 3: [ISPConfig](https://www.ispconfig.org/) 설정
 
 
 
