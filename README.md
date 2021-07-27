@@ -1,4 +1,4 @@
-# Zero Config [PWA](https://developers.google.com/web/progressive-web-apps/) Plugin for [Next.js](https://nextjs.org/)
+# [우분투](https://ubuntu.com/download/server)로 서버만들기!
 
 This plugin is powered by [workbox](https://developers.google.com/web/tools/workbox/) and other good stuff.
 
