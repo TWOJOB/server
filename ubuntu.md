@@ -24,7 +24,11 @@
 
 ### Step 1: [우분투](https://ubuntu.com/download/server) 설치
 
-> **NOTE** - 취신버전 도는 자신이 원하는 버전 설치
+`Option 2` 클릭
+
+`Download Ubuntu Server (최신버전) LTS` 클릭
+
+> **NOTE** - 최신버전 도는 자신이 원하는 버전 설치
 
 ## Install
 
