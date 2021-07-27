@@ -68,7 +68,7 @@ wget -O install.sh http://www.aapanel.com/script/install-ubuntu_6.0_en.sh && sud
 ``` Linux
 Y
 ```
-입력
+복사 후 PuTTY(SSH)에 입력
 
 
 ### Step 2: [aaPanel](https://www.aapanel.com/index.html) 설정
