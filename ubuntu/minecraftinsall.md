@@ -67,31 +67,37 @@ java -version
     API : Bukkit API, Spigot API, Paper API
     지원 로더 : [버킷 플러그인](https://dev.bukkit.org/bukkit-plugins), [스피곳 플러그인](https://www.spigotmc.org/resources/categories/spigot.4/), [페이퍼 플러그인](https://papermc.io/forums/c/plugin-releases/15)
     특징: 비동기 청크 로딩등 다양한 최적화 패치 적용
-    > **소규모 서버** 추천한다.
+    > **소규모 서버** 추천
     
-- [()]()
-    Paper 포크
-    특징: 업데이트가 가장빠름
+- [Tuinity(튜이니티)](https://github.com/Tuinity/Tuinity)
+    API : Bukkit API, Spigot API, Paper API, Tuinity API
+    지원 로더 : [버킷 플러그인](https://dev.bukkit.org/bukkit-plugins), [스피곳 플러그인](https://www.spigotmc.org/resources/categories/spigot.4/), [페이퍼 플러그인](https://papermc.io/forums/c/plugin-releases/15), 튜이니티 플러그인
+    특징: 페이퍼 버킷을 최적화 해서 페이퍼 버킷보다 성능은 더 좋다. 페이퍼 버킷에서 작동되는 플러그인 중 호환성 문제는 없다.
+    > **대규모 서버** 추천
     
-- [()]()
-    Paper 포크
-    특징: 업데이트가 가장빠름
+- [Purpur(퍼퍼)](https://purpur.pl3x.net/downloads/#1.16.5)
+    API : Bukkit API, Spigot API, Paper API, Tuinity API, Purpur API
+    지원 로더 : [버킷 플러그인](https://dev.bukkit.org/bukkit-plugins), [스피곳 플러그인](https://www.spigotmc.org/resources/categories/spigot.4/), [페이퍼 플러그인](https://papermc.io/forums/c/plugin-releases/15), 튜이니티 플러그인, 퍼퍼 플러그인
+    특징: 주로 마인크래프트의 시스템을 purpur.yml 로 수정할 수 있도록 커스터마이징에 초점을 맞춘 버킷이며, 이 역시 Tuinity 처럼 대규모 서버를 열 생각이라면 이 버킷을 추천한다.
+    > **[서버를 최적화](https://github.com/YouHaveTrouble/minecraft-optimization)** 
+    > **대규모 서버** 추천
     
-- [()]()
-    Paper 포크
-    특징: 업데이트가 가장빠름
+> **플러그인 + 모드 서버**
+- [Arclight(아크라이트)](https://github.com/IzzelAliz/Arclight)
+    API : Forge Mod Loader, Bukkit, Spigot
+    지원 로더 : [버킷 플러그인](https://dev.bukkit.org/bukkit-plugins), [스피곳 플러그인](https://www.spigotmc.org/resources/categories/spigot.4/), [포지 모드](https://www.curseforge.com/minecraft/mc-mods)
+    특징: Magma, Mohist, CatServer 처럼 포지와 스피곳을 모두 호환하는 하이브리드 버킷이며, 최신버전 하이브리드 버킷중 가장 안정적이다.
     
-- [()]()
-    Paper 포크
-    특징: 업데이트가 가장빠름
+> **모드서버**
+- [Forge(포지)](https://files.minecraftforge.net/net/minecraftforge/forge/)
+    API : ForgeModLoader API
+    지원 로더 : [포지 모드](https://www.curseforge.com/minecraft/mc-mods)
+    특징: 포지 모드 서버 구동에 사용되는 서버 프로그램. 플러그인은 호환되지 않지만 비슷한 역할을 하는 서버용 모드나 포지 모드로 포트된 플러그인을 대신 사용 가능하다.
     
-- [()]()
-    Paper 포크
-    특징: 업데이트가 가장빠름
-    
-- []()
-    Paper 포크
-    특징: 업데이트가 가장빠름
+- [Fabric(패브릭)](https://purpur.pl3x.net/downloads/#1.16.5)
+    API : Fabric API
+    지원 로더 : [패브릭 모드](https://www.curseforge.com/minecraft/mc-mods)
+    특징: 
     
 
 
