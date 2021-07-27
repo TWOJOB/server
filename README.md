@@ -9,10 +9,11 @@
 - 🎮 마크 페널[[aaPanel](https://www.aapanel.com/index.html)] 설치 및 설정
 - 🌐 웹 페널[[ISPConfig](https://www.ispconfig.org/)] 설치 및 설정
 - ☁ 클라우드[[nextcloud](https://nextcloud.com/)] 설치 및 설정
-- 🚀 마크 시작 하기
-- 📦 Use [workbox](https://developers.google.com/web/tools/workbox/) and [workbox-window](https://developers.google.com/web/tools/workbox/modules/workbox-window) v6
-- 🍪 Work with cookies out of the box
-- ☕ No custom server needed for Next.js 9+ [example](https://github.com/shadowwalker/next-pwa/tree/master/examples/next-9)
+- 🚀 [마크](https://www.minecraft.net/ko-kr)서버 시작 하기
+- 🚀 커뮤니티 설치
+- 🚀 [워드프레스](https://ko.wordpress.org/download/) 다운로드 및 설치
+- 🚀 [그누보드](https://sir.kr/g5_pds) 다운로드 및 설치
+- 🚀 [Vditor](https://b3log.org/vditor/)
 
 > **NOTE 1** - `next-pwa` version 2.0.0+ should only work with `next.js` 9.1+, and static files should only be served through `public` directory. This will make things simpler.
 >
