@@ -17,7 +17,7 @@
 [윈도우](https://www.microsoft.com/ko-kr/software-download)
 
 리눅스
-- 🚀 [ubuntu 다운로드 및 설치하기](https://github.com/TWOJOB/server/blob/main/ubuntu.md)
+- 🚀 [ubuntu 다운로드 및 설치하기](https://github.com/TWOJOB/server/blob/main/ubuntu/ubuntu.md)
 - 🚀 [CentOS](https://www.centos.org/) 다운로드 및 설치
 
 
