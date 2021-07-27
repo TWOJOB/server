@@ -13,21 +13,77 @@
 
 > **NOTE 1** - 👋 이 튜토리얼은 잘 모르는 사람이 기억하기 쉽게 하려고 만든 것입니다. 정확하지 않을 수도 있습니다.
 >
-> **NOTE 2** - 안되거나 오류가 나면 처음부터 다시 설치를 하다 보면 고쳐지기도 한다`그래서 50번 정도 다시 설치하면 서 알게 된 거...`
+> **NOTE 2** - 안되거나 오류가 나면 처음부터 다시 설치를 하다 보면 고쳐지기도 한다.   `그래서 50번 정도 다시 설치하면 서 알게 된 거...`
 
 ----
 
 
-## 부팅 USB 만들기
+## [PuTTY](https://www.putty.org/) 설치하기
 
-### Step 1: [우분투](https://ubuntu.com/download/server) 설치
+### Step 1: [PuTTY](https://www.putty.org/) 설치
 
-`[우분투](https://ubuntu.com/download/server)`사이트에 접속후
+`[PuTTY 다운로드](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)`사이트에 접속후
 
-`Option 2` 클릭
+putty.exe (the SSH and Telnet client itself) 버전(64-bit x86) `putty.exe`
 
-`Download Ubuntu Server (최신버전) LTS` 클릭
+> **NOTE** - SSH버전 또는 통합버전 설치
 
-> **NOTE** - 최신버전 또는 자신이 원하는 버전 설치
+### Step 2: SSH연결하기
 
-### Step 2: 부팅 가능한 USB 드라이브
+`PuTTY(putty.exe)`를 킨후
+
+Host Name
+- `서버IP` 입력
+
+Port
+- `22` 입력
+
+Connenction type
+- `SSH` 선택
+
+`Open` 클릭
+
+### Step 3: SSH로그인하기
+
+서버에 설치할때입력한 `아이디` 입력
+
+서버에 설치할때입력한 `비밀번호` 입력
+
+
+
+
+## [ISPConfig](https://www.ispconfig.org/) 설치 및 설정하기
+
+### Step 1: [ISPConfig](https://www.ispconfig.org/) 설치
+
+복사 후 PuTTY(SSH)에 입력
+
+
+``` Linux
+wget -O install.sh http://www.aapanel.com/script/install-ubuntu_6.0_en.sh && sudo bash install.sh aapanel
+```
+복사 후 PuTTY(SSH)에 입력
+
+``` Linux
+Y
+```
+복사 후 PuTTY(SSH)에 입력
+
+
+### Step 2: [ISPConfig](https://www.ispconfig.org/) 설정
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
