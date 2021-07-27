@@ -1,30 +1,20 @@
 # [우분투](https://ubuntu.com/download/server)로 서버만들기!
 
-This plugin is powered by [workbox](https://developers.google.com/web/tools/workbox/) and other good stuff.
 
-![size](https://img.shields.io/bundlephobia/minzip/next-pwa.svg) ![dependencies](https://img.shields.io/librariesio/release/npm/next-pwa) ![downloads](https://img.shields.io/npm/dw/next-pwa.svg) ![license](https://img.shields.io/npm/l/next-pwa.svg)
+👋 이 튜토리얼은 코딩을 모르는 사람이 기억할려고 만든것입니다 정확하지 않을수도 있습니다.
 
-👋 Share your awesome PWA project 👉 [here](https://github.com/shadowwalker/next-pwa/discussions/206)
-
-**Features**
+**튜토리얼**
 
 - 🌏 서버 컴퓨터에 [우분투](https://ubuntu.com/download/server) 설치
 - 🎮 마크 페널[[aaPanel](https://www.aapanel.com/index.html)] 설치 및 설정
 - 🌐 웹 페널[[ISPConfig](https://www.ispconfig.org/)] 설치 및 설정
 - ☁ 클라우드[[nextcloud](https://nextcloud.com/)] 설치 및 설정
-- 📴 마크 시작
+- 🚀 마크 시작 하기
 - 📦 Use [workbox](https://developers.google.com/web/tools/workbox/) and [workbox-window](https://developers.google.com/web/tools/workbox/modules/workbox-window) v6
 - 🍪 Work with cookies out of the box
 - ☕ No custom server needed for Next.js 9+ [example](https://github.com/shadowwalker/next-pwa/tree/master/examples/next-9)
 - 🔧 Handle PWA lifecycle events opt-in [example](https://github.com/shadowwalker/next-pwa/tree/master/examples/lifecycle)
-- 📐 Custom worker to run extra code with code splitting and **typescript** support [example](https://github.com/shadowwalker/next-pwa/tree/master/examples/custom-ts-worker)
-- 📜 [Public environment variables](https://nextjs.org/docs/basic-features/environment-variables#exposing-environment-variables-to-the-browser) available in custom worker as usual
-- 🐞 Debug service worker with confidence in development mode without caching
-- 🌏 Internationalization (a.k.a I18N) with `next-i18next` [example](https://github.com/shadowwalker/next-pwa/tree/master/examples/next-i18next)
-- 🛠 Configurable by the same [workbox configuration options](https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin) for [GenerateSW](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-webpack-plugin.GenerateSW) and [InjectManifest](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-webpack-plugin.InjectManifest)
-- 🚀 Spin up a [GitPod](https://gitpod.io/#https://github.com/shadowwalker/next-pwa/) and try out examples in rocket speed
-- ⚡ Support [blitz.js](https://blitzjs.com/) (simply add to `blitz.config.js`)
-- 🔩 (Experimental) precaching `.module.js` when `next.config.js` has `experimental.modern` set to `true`
+- 📐 Custom worker to run extra code with code splitting and **typescript** support [example]
 
 > **NOTE 1** - `next-pwa` version 2.0.0+ should only work with `next.js` 9.1+, and static files should only be served through `public` directory. This will make things simpler.
 >
