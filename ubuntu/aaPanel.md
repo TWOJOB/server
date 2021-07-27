@@ -18,16 +18,55 @@
 ----
 
 
-## 부팅 USB 만들기
+## [PuTTY](https://www.putty.org/) 설치하기
 
-### Step 1: [우분투](https://ubuntu.com/download/server) 설치
+### Step 1: [PuTTY](https://www.putty.org/) 설치
 
-`[우분투](https://ubuntu.com/download/server)`사이트에 접속후
+`[PuTTY 다운로드](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)`사이트에 접속후
 
-`Option 2` 클릭
+putty.exe (the SSH and Telnet client itself) 버전(64-bit x86) `putty.exe`
 
-`Download Ubuntu Server (최신버전) LTS` 클릭
+> **NOTE** - SSH버전 또는 통합버전 설치
 
-> **NOTE** - 최신버전 또는 자신이 원하는 버전 설치
+### Step 2: SSH연결하기
 
-### Step 2: 부팅 가능한 USB 드라이브
+PuTTY를 킨후
+
+Host Name
+- `서버IP` 입력
+
+Port
+- `22` 입력
+
+Connenction type
+- `SSH` 선택
+
+`Open` 클릭
+
+
+## [aaPanel](https://www.aapanel.com/index.html) 설치 하기
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
