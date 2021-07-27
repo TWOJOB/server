@@ -101,6 +101,7 @@ java -version
     특징: 주로 마인크래프트의 시스템을 purpur.yml 로 수정할 수 있도록 커스터마이징에 초점을 맞춘 버킷이며, 이 역시 Tuinity 처럼 대규모 서버를 열 생각이라면 이 버킷을 추천한다.
     
     > **[서버를 최적화](https://github.com/YouHaveTrouble/minecraft-optimization)** 
+
     > **대규모 서버** 추천
     
     
