@@ -70,7 +70,7 @@ java -version
     지원 로더 : [버킷 플러그인](https://dev.bukkit.org/bukkit-plugins), [스피곳 플러그인](https://www.spigotmc.org/resources/categories/spigot.4/)
     
     
-- [Paper(스피곳)](https://papermc.io/downloads)
+- [Paper(페이퍼)](https://papermc.io/downloads)
 
     API : Bukkit API, Spigot API, Paper API
     
