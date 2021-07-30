@@ -12,7 +12,7 @@
 
 ### Step 1: [ffmpeg](http://ffmpeg.org/) 설치
 
-[ffmpeg사이트](http://ffmpeg.org/download.html)사이트 접속후
+[ffmpeg사이트](http://ffmpeg.org/download.html) 접속후
 
 `Window(윈도우)` 클릭
 
