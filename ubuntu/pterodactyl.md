@@ -88,7 +88,7 @@ Connenction type
 ----
 
 
-## [aaPanel](https://www.aapanel.com/index.html) 설치 및 설정하기
+## [자동설치하기](https://github.com/vilhelmprytz/pterodactyl-installer)
 
 ### Step 1: [aaPanel](https://www.aapanel.com/index.html) 설치
 
