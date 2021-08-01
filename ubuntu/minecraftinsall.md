@@ -39,9 +39,11 @@ sudo apt install oracle-java16-installer
 
 > **NOTE** - 최신버전 또는 자신이 원하는 버전 설치
 
-`확인` 클릭
+`y` 입력
 
-`yes` 입력
+`ok` 클릭
+
+`yes` 클릭
 
 ### Step 1: java 확인
 
