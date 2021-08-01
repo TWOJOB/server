@@ -97,9 +97,9 @@ Connenction type
 Installation:
 - Ubuntu/Deepin: 
 ``` Linux
-wget -O install.sh http://www.aapanel.com/script/install-ubuntu_6.0_en.sh && sudo bash install.sh aapanel
+Asia/Seoul
 ```
-복사 후 PuTTY(SSH)에 입력
+시간 아시아/서울로 입력
 
 ``` Linux
 Y
