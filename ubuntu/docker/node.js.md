@@ -63,3 +63,8 @@ npm install vue
 ``` ubuntu
 apt-get install apache2
 ```
+
+
+``` ubuntu
+service apache2 start
+```
