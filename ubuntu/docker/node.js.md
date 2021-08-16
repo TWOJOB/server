@@ -59,3 +59,7 @@ vue 설치
 npm install vue
 ```
 
+
+``` ubuntu
+apt-get install apache2
+```
