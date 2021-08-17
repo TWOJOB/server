@@ -54,6 +54,12 @@ npm install -g @vue/cli
 ```
 
 
+vue 프로잭트 생성
+``` ubuntu
+vue create [프로잭트명]
+```
+
+
 vue 설치
 ``` ubuntu
 npm install vue
