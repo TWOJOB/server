@@ -17,31 +17,31 @@ docker pull
 
 이미지 목록 보기
 ```
-sudo docker images
+docker images
 ```
 
 
 이미지 삭제
 ```
-sudo docker rmi 
+docker rmi 
 ```
 
 
 실행중인 컨테이너 목록 보기
 ```
-sudo docker ps
+docker ps
 ```
 
 
 모든 컨테이너 목록 보기
 ```
-sudo docker ps -a
+docker ps -a
 ```
 
 
 컨테이너 만들기
 ```
-sudo docker run [options] image
+docker run [options] image
 ```
 
 
@@ -58,31 +58,31 @@ sudo docker run [options] image
 
 컨테이너 시작
 ```
-sudo docker start 
+docker start 
 ```
 
 
 컨테이너 재시작
 ```
-sudo docker restart 
+docker restart 
 ```
 
 
 컨테이너 접속
 ```
-sudo docker attach 
+docker attach 
 ```
 
 
 컨테이너 정지
 ```
-sudo docker stop 
+docker stop 
 ```
 
 
 컨테이너 삭제
 ```
-sudo docker rm 
+docker rm 
 ```
 
 
