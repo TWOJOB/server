@@ -36,7 +36,7 @@ sudo apt install npm -y
 
 vue cli 설치
 ``` ubuntu
-npm install -g @vue/cli
+sudo npm install -g @vue/cli
 ```
 
 
