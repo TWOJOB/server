@@ -23,12 +23,6 @@ docker pull debian
 ```
 
 
-ub
-```
-
-```
-
-
 ## HTTP Server 이미지
 
 
@@ -41,12 +35,6 @@ docker pull httpd
 Nginx
 ```
 docker pull nginx
-```
-
-
-ub
-```
-
 ```
 
 
@@ -80,12 +68,6 @@ docker pull ruby
 ```
 
 
-ub
-```
-
-```
-
-
 Rust
 ```
 docker pull rust
@@ -96,13 +78,6 @@ elixir
 ```
 docker pull elixir
 ```
-
-
-ub
-```
-
-```
-
 
 ## DB 이미지
 
@@ -129,46 +104,3 @@ mysql
 ```
 docker pull mysql
 ```
-
-
-ub
-```
-
-```
-
-
-ub
-```
-
-```
-
-
-ub
-```
-
-```
-
-
-ub
-```
-
-```
-
-
-ub
-```
-
-```
-
-
-ub
-```
-
-```
-
-
-ub
-```
-
-```
-
