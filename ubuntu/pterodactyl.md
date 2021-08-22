@@ -22,105 +22,441 @@
 
 ### Step 1: [pterodactyl](https://pterodactyl.io/panel/1.0/getting_started.html#picking-a-server-os) 설치
 
+
+``` Linux
+sudo su -
+
+```
+
+
+``` Linux
+apt -y install software-properties-common curl apt-transport-https ca-certificates gnupg
+```
+
+
+``` Linux
+LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
+```
+
+
+``` Linux
+add-apt-repository -y ppa:chris-lea/redis-server
+```
+
+
+``` Linux
+curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash
+```
+
+
+``` Linux
+apt update
+```
+
+
+``` Linux
+apt -y install php8.0 php8.0-{cli,gd,mysql,pdo,mbstring,tokenizer,bcmath,xml,fpm,curl,zip} mariadb-server nginx tar unzip git redis-server
+```
+
+
+## Composer 설치
+
+
 ``` Linux
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 ```
-복사 후 PuTTY(SSH)에 입력
+
+
+## 파일다운 로드
+
 
 ``` Linux
 mkdir -p /var/www/pterodactyl
+```
+
+
+``` Linux
 cd /var/www/pterodactyl
 ```
-복사 후 PuTTY(SSH)에 입력
+
+
+``` Linux
+curl -Lo panel.tar.gz https://github.com/pterodactyl/panel/releases/latest/download/panel.tar.gz
+```
+
+
+``` Linux
+tar -xzvf panel.tar.gz
+```
+
+
+``` Linux
+chmod -R 755 storage/* bootstrap/cache/
+```
+
 
 ``` Linux
 cp .env.example .env
-composer install --no-dev --optimize-autoloader
+```
 
-# Only run the command below if you are installing this Panel for
-# the first time and do not have any Pterodactyl Panel data in the database.
+
+## 데이터 베에스 설정
+
+
+``` Linux
+mysql -u root -p
+```
+비밀번호 입력
+
+
+``` Linux
+CREATE USER 'pterodactyl'@'127.0.0.1' IDENTIFIED BY '[사용할 mrsql 비밀번호 입력]';
+```
+
+
+``` Linux
+CREATE DATABASE panel;
+```
+
+
+``` Linux
+GRANT ALL PRIVILEGES ON panel.* TO 'pterodactyl'@'127.0.0.1' WITH GRANT OPTION;
+```
+
+
+``` Linux
+CREATE USER 'pterodactyluser'@'127.0.0.1' IDENTIFIED BY '[아까 입력한 비밀번호]';
+```
+
+
+``` Linux
+GRANT ALL PRIVILEGES ON *.* TO 'pterodactyluser'@'127.0.0.1' WITH GRANT OPTION;
+```
+
+
+``` Linux
+exit
+```
+
+
+------
+
+
+``` Linux
+composer install --no-dev --optimize-autoloader
+```
+yes
+
+
+``` Linux
 php artisan key:generate --force
 ```
-복사 후 PuTTY(SSH)에 입력
+
+
+``` Linux
+php artisan p:environment:setup
+```
+
+
+이메일: 
+주소: http://
+시간: Asia/Seoul
+나머지 넘기고
+yes입력
+
+
+``` Linux
+php artisan p:environment:database
+```
+4번 Enter후 데이터 베이스 비밀번호 입력
+
+
+## Database Setup
+
+
+``` Linux
+php artisan migrate --seed --force
+```
+
+
+## Add The First User
+
+
+``` Linux
+php artisan p:user:make
+```
+
+
+yes
+이메일
+유저이름
+성
+이름
+비밀번호
+
+
+
+
+## Set Permissions
+
+
+``` Linux
+chown -R www-data:www-data /var/www/pterodactyl/*
+```
+
+
+``` Linux
+* * * * * php /var/www/pterodactyl/artisan schedule:run >> /dev/null 2>&1
+```
+
+
+## Create Queue Worker
+
+
+``` Linux
+cd /etc/systemd/system
+```
+
+
+``` Linux
+cat > pteroq.service
+```
+
+
+``` Linux
+# Pterodactyl Queue Worker File
+# ----------------------------------
+
+[Unit]
+Description=Pterodactyl Queue Worker
+After=redis-server.service
+
+[Service]
+# On some systems the user and group might be different.
+# Some systems use `apache` or `nginx` as the user and group.
+User=www-data
+Group=www-data
+Restart=always
+ExecStart=/usr/bin/php /var/www/pterodactyl/artisan queue:work --queue=high,standard,low --sleep=3 --tries=3
+StartLimitInterval=180
+StartLimitBurst=30
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
+```
+
+
+입력후
+Ctrl+D
+
+
+``` Linux
+sudo systemctl enable --now redis-server
+```
+
+
+``` Linux
+sudo systemctl enable --now pteroq.service
+```
+
+
+# Nginx With SSL
+
+
+``` Linux
+cd /etc/nginx/sites-available/
+```
+
+
+``` Linux
+cat > pterodactyl.conf
+```
+
+
+``` Linux
+server {
+    listen 80;
+    server_name <domain>;
+
+    root /var/www/pterodactyl/public;
+    index index.html index.htm index.php;
+    charset utf-8;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location = /robots.txt  { access_log off; log_not_found off; }
+
+    access_log off;
+    error_log  /var/log/nginx/pterodactyl.app-error.log error;
+
+    # allow larger file uploads and longer script runtimes
+    client_max_body_size 100m;
+    client_body_timeout 120s;
+
+    sendfile off;
+
+    location ~ \.php$ {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass unix:/run/php/php8.0-fpm.sock;
+        fastcgi_index index.php;
+        include fastcgi_params;
+        fastcgi_param PHP_VALUE "upload_max_filesize = 100M \n post_max_size=100M";
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param HTTP_PROXY "";
+        fastcgi_intercept_errors off;
+        fastcgi_buffer_size 16k;
+        fastcgi_buffers 4 16k;
+        fastcgi_connect_timeout 300;
+        fastcgi_send_timeout 300;
+        fastcgi_read_timeout 300;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
+```
+
+
+<domain>을 IP또는 자신의 도메인으로 수정후 입력
+
+
+``` Linux
+sudo ln -s /etc/nginx/sites-available/pterodactyl.conf /etc/nginx/sites-enabled/pterodactyl.conf
+```
+
+
+``` Linux
+systemctl restart nginx
+```
+
 
 ``` Linux
 
 ```
-복사 후 PuTTY(SSH)에 입력
+
 
 ``` Linux
 
 ```
-복사 후 PuTTY(SSH)에 입력
+
 
 ``` Linux
 
 ```
-복사 후 PuTTY(SSH)에 입력
+
 
 ``` Linux
 
 ```
-복사 후 PuTTY(SSH)에 입력
 
-### Step 2: SSH연결하기
-
-`PuTTY(putty.exe)`를 킨후
-
-Host Name
-- `서버IP` 입력
-
-Port
-- `22` 입력
-
-Connenction type
-- `SSH` 선택
-
-`Open` 클릭
-
-### Step 3: SSH로그인하기
-
-서버에 설치할때입력한 `아이디` 입력
-
-서버에 설치할때입력한 `비밀번호` 입력
-
-
-----
-
-
-## [자동설치하기](https://github.com/vilhelmprytz/pterodactyl-installer)
-
-### Step 1: [aaPanel](https://www.aapanel.com/index.html) 설치
-
-[aaPanel](https://www.aapanel.com/index.html)사이트 접속후
-
-Installation:
-- Ubuntu/Deepin: 
-``` Linux
-Asia/Seoul
-```
-시간 아시아/서울로 입력
 
 ``` Linux
-Y
+
 ```
-복사 후 PuTTY(SSH)에 입력
 
 
-### Step 2: [aaPanel](https://www.aapanel.com/index.html) 설정
+``` Linux
+
+```
 
 
+``` Linux
+
+```
 
 
+``` Linux
+
+```
 
 
+``` Linux
+
+```
 
 
+``` Linux
+
+```
 
 
+``` Linux
+
+```
 
 
+``` Linux
+
+```
 
 
+``` Linux
+
+```
+
+
+``` Linux
+
+```
+
+
+``` Linux
+
+```
+
+
+``` Linux
+
+```
+
+
+``` Linux
+
+```
+
+
+``` Linux
+
+```
+
+
+``` Linux
+
+```
+
+
+``` Linux
+
+```
+
+
+``` Linux
+
+```
+
+
+``` Linux
+
+```
+
+
+``` Linux
+
+```
+
+
+``` Linux
+
+```
+
+
+``` Linux
+
+```
 
 
