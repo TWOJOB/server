@@ -16,14 +16,14 @@ apt-get update && apt-get install
 apt-get install wget
 ```
 
-y입력
+Y입력
 
 3
 ```
 apt-get install gnupg
 ```
 
-y입력
+Y입력
 
 4
 ```
@@ -48,7 +48,8 @@ apt-get update
 apt-get install -y mongodb-org
 ```
 
-
+6(아시아)입력
+69(서울)입력
 
 설치확인
 ```
