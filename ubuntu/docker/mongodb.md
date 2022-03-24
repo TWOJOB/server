@@ -16,30 +16,34 @@ apt-get update && apt-get install
 apt-get install wget
 ```
 
+y입력
 
+3
 ```
 apt-get install gnupg
 ```
 
-3
+y입력
+
+4
 ```
 wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | apt-key add -
 ```
 
 
-4
+5
 ```
 echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-5.0.list
 ```
 
 
-5
+6
 ```
 apt-get update
 ```
 
 
-5
+7
 ```
 apt-get install -y mongodb-org
 ```
