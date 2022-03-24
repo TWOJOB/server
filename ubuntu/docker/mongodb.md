@@ -1,5 +1,11 @@
 ## [도커 이미지](https://hub.docker.com/)
 
+근데
+CMD로 도커 이미지다운한거랑 번전비교해보며 똑같은거같아요!
+
+```
+docker pull mongo
+```
 
 
 ## mongodb설치
@@ -56,3 +62,5 @@ apt-get install -y mongodb-org
 ```
 mongo --version
 ```
+
+
