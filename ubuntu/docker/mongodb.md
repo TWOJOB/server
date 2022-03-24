@@ -44,3 +44,9 @@ apt-get update
 apt-get install -y mongodb-org
 ```
 
+
+
+설치확인
+```
+mongo --version
+```
