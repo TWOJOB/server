@@ -13,7 +13,7 @@ apt-get update && apt-get install
 
 2
 ```
-apt-gpt install wget
+apt-get install wget
 ```
 
 
