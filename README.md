@@ -19,6 +19,7 @@
 리눅스
 - 🚀 [ubuntu 다운로드 및 설치하기](https://github.com/TWOJOB/server/blob/main/ubuntu/ubuntu.md)
 - 🚀 [CentOS](https://www.centos.org/) 다운로드 및 설치
+- [docker]
 
 
 > 이중에 저는 ubuntu(우분투)를 사용하였습니다.
