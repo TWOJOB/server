@@ -17,6 +17,10 @@ apt-get install wget
 ```
 
 
+```
+apt-get install gnupg
+```
+
 3
 ```
 wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | apt-key add -
