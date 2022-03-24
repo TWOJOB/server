@@ -7,7 +7,7 @@
 
 1
 ```
-apt-get updeate && apt-get install
+apt-get update && apt-get install
 ```
 
 
