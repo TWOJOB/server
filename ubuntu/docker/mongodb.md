@@ -30,6 +30,7 @@ Y입력
 wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | apt-key add -
 ```
 
+OK 출력 될시 다음으로 이동
 
 5
 ```
