@@ -94,7 +94,7 @@ java -version
     > **대규모 서버** 추천
     
     
-- [Purpur(퍼퍼)](https://purpur.pl3x.net/downloads/#1.16.5)
+- [Purpur(퍼퍼)](https://purpurmc.org/)
 
     API : Bukkit API, Spigot API, Paper API, Tuinity API, Purpur API
     
