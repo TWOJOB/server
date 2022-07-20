@@ -28,7 +28,7 @@
 
 ### Step 1: [Fabric(패브릭)](https://fabricmc.net/use/) 설치
 
-[Fabric(패브릭) 사이트](https://fabricmc.net/use/에 접속후
+[Fabric(패브릭) 사이트](https://fabricmc.net/use/)에 접속후
 
 `Download installer (Windows/.EXE)` 다운로드
 
