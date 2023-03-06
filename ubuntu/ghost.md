@@ -9,6 +9,7 @@ apt-get upgrade
 
 
 ```
+usermod -aG sudo ghostuser
 adduser ghostuser
 adduser ghostuser sudo
 ```
