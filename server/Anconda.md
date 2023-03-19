@@ -38,13 +38,21 @@ nano ~/.jupyter_notegook_config.py
 
 
 c.NotebookApp.allow_orign = '*' #외부 접속 허용
+
 c.NotebookApp.
+
 c.NotebookApp.
+
 c.NotebookApp.notebook_dir = '작업 경로'
+
 c.NotebookApp.ip = '*'
+
 c.NotebookApp.port = '8888'
+
 c.NotebookApp.password'<해시화된 비밀번호>' # nano ~/.jupyter_notegook_config.json 에서 확인
+
 c.NotebookApp.password_required = True #  비밀번호 사용여부
+
 c.NotebookApp.open_browser = Fales # 서버 Pc에서 자동으로 브라우저가 열리지 않도록 설정
 
 
