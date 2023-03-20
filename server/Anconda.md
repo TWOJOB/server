@@ -60,3 +60,7 @@ c.NotebookApp.open_browser = Fales # 서버 Pc에서 자동으로 브라우저�
 ```
 jupyter notebook
 ```
+
+
+
+https://chaelin0722.github.io/etc/server_setting_success/#6-anaconda-설치와-가상환경-만들기
