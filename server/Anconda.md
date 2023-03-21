@@ -1,10 +1,12 @@
 # 아나콘다 설치 하기
 
-
+```
 wget https://repo.continuum.io/archive/Anaconda3-2022.10-Linux-x86_64.sh
+```
 
+```
 bash Anaconda3-2022.10-Linux-x86_64.sh
-
+```
 
 
 
