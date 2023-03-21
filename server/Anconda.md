@@ -36,6 +36,10 @@ sudo ufw allow 8888
 jupyter notebook --generate-config
 ```
 
+```
+jupyter notebook password
+```
+
 
 3. jupyter notebook 설정 파이 수성
 
