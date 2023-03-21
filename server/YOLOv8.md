@@ -42,13 +42,34 @@ exit()
 
 버전 확인 후
 [파이토치](https://pytorch.kr/get-started/locally/) 접속 후
-Stable, Windows, pip, python, CUDA 11.7 클릭 후 아래 명령어 복사
+Stable, Windows, pip, python, CUDA 11.7 클릭 후 아래 명령어 복사 후 [install]뒤에 [--upgrade]입력후 명령
 
 ```
 pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu117
+pip3 install --upgrade torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu117
 ```
 
-입력
+파이썬 접속
+```
+python
+```
+
+```
+import torch
+```
+
+```
+torch.cuda.is_available()
+```
+True 확인
+
+```
+exit()
+```
+
+
+
+
 
 
 
