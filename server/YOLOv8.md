@@ -67,10 +67,13 @@ True 확인
 exit()
 ```
 
+원하는 파일이 있는 경로로 입장
+```
+cd yolov8
+```
 
-
-
-
-
-
+욜로 실행
+```
+yolo task=detect mode=predct model=yolov8n.pt source=1.jpg
+```
 
