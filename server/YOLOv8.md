@@ -74,6 +74,6 @@ cd yolov8
 
 욜로 실행
 ```
-yolo task=detect mode=predct model=yolov8n.pt source=1.jpg
+yolo task=detect mode=predict model=yolov8n.pt source=1.jpg
 ```
 
