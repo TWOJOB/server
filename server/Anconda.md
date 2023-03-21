@@ -44,7 +44,7 @@ jupyter notebook password
 3. jupyter notebook 설정 파이 수성
 
 ```
-nano ~/.jupyter_notegook_config.py
+nano ~/.jupyter/jupyter_notegook_config.py
 ```
 접속 후 control + w를 눌러서 내요 검색
 
