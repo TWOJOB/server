@@ -33,7 +33,7 @@ sudo ufw allow 8888
 
 2. jupyter notekook 암호 설정
 ```
-jupyter notebook --gen
+jupyter notebook --generate-config
 ```
 
 
@@ -72,3 +72,5 @@ jupyter notebook
 
 
 https://chaelin0722.github.io/etc/server_setting_success/#6-anaconda-설치와-가상환경-만들기
+
+https://cyan91.tistory.com/49
