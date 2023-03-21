@@ -61,7 +61,7 @@ c.NotebookApp.ip = '*'
 
 c.NotebookApp.port = '8888'
 
-c.NotebookApp.password'<해시화된 비밀번호>' # nano ~/.jupyter_notegook_config.json 에서 확인
+c.NotebookApp.password'<해시화된 비밀번호>' # nano ~/.jupyter/jupyter_notebook_config.json 에서 확인
 
 c.NotebookApp.password_required = True #  비밀번호 사용여부
 
